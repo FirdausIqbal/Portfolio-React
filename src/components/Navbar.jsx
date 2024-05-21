@@ -1,11 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    color: #404044;
+`
+const Main = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
     align-items: center;
+    padding: 1.5rem 5rem;
 `
 const Me = styled.h1`
   font-size: 1.5rem;
@@ -30,17 +37,20 @@ const Projects = styled.div`
 
 const Navbar = () => {
   return (
-   <Container>
-    <Left>
-      <Me>Firdaus Iqbal</Me>
-    </Left>
-    <Right>
-      <About>About</About>
-      <Contact>Contact</Contact>
-      <Projects>Projects</Projects>
-    </Right>
-    
-   </Container>
+    <Container>
+      <Main>
+        <Left>
+          <Me>Firdaus Iqbal</Me>
+        </Left>
+        <Right>
+          <Link to='#about'>
+            <About>About</About>
+          </Link>
+          <Contact>Contact</Contact>
+          <Projects>Projects</Projects>
+        </Right>
+      </Main>
+    </Container>
   )
 }
 
