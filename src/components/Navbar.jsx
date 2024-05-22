@@ -6,7 +6,6 @@ const Container = styled.div`
     position: fixed;
     background-color: #ffffff;
     width: 100%;
-    color: #404044;
 `
 const Main = styled.div`
     display: flex;
@@ -35,6 +34,11 @@ const Projects = styled.div`
   cursor: pointer;
 `
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #404044;
+`
+
 const Navbar = () => {
   return (
     <Container>
@@ -43,11 +47,19 @@ const Navbar = () => {
           <Me>Firdaus Iqbal</Me>
         </Left>
         <Right>
-          <Link to='#about'>
+          <StyledLink to={'/'}>
+            <About>Home</About>
+          </StyledLink>
+          <StyledLink to='#about'>
             <About>About</About>
-          </Link>
-          <Contact>Contact</Contact>
-          <Projects>Projects</Projects>
+          </StyledLink>
+          <StyledLink to='#about'>
+            <About>Project</About>
+          </StyledLink>
+          <StyledLink to='#about'>
+            <About>Contact</About>
+          </StyledLink>
+          
         </Right>
       </Main>
     </Container>
