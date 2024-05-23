@@ -35,7 +35,7 @@ const Banner = () => {
           <Main>
             Hi, I'm Muhammad Firdaus Iqbal <br/>
             <Minibio>
-              A beginner JavaScript developer with a particular focus on backend development using Node.js. 
+              A beginner JavaScript developer with a particular focus on backend development using Nodejs. 
             </Minibio>
           </Main>
         </InnerText>

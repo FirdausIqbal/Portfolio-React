@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import About from '../components/About'
+import Project from '../components/Project'
+
 const useScrollToHash = () => {
   const { hash } = useLocation();
   const [idHash, setIdHash] = useState();
@@ -34,6 +36,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <About />
+      <Project />
     </div>
   )
 }
