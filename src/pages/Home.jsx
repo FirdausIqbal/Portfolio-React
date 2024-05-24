@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import About from '../components/About'
 import Project from '../components/Project'
+import Footer from '../components/Footer'
 
 const useScrollToHash = () => {
   const { hash } = useLocation();
@@ -23,7 +24,7 @@ const useScrollToHash = () => {
     if(idHash && hash){
       const element = document.getElementById(idHash.substring(1));
       if(element){
-        element.scrollIntoView({behavior: 'smooth'});
+        element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'center'});
       }
     }
   })
@@ -37,6 +38,7 @@ const Home = () => {
       <Banner />
       <About />
       <Project />
+      <Footer />
     </div>
   )
 }

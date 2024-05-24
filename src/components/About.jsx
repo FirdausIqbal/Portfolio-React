@@ -63,7 +63,7 @@ const About = () => {
                 <Paragraphme>
                     I'm  a novice backend developer specializing in Node.js. I recently embarked on my programming journey, and I am dedicated to building robust and scalable server-side applications.
                     <br/><br />
-                    With a background in Informatics Engineering from Institut Sains dan Teknologi Nasional, I have developed a strong foundation in programming and problem-solving. My focus is on improving my skills in Node.js, databases, and API development.
+                    With a background in Informatics Engineering from Institut Sains & Teknologi Nasional, I have developed a strong foundation in programming and problem-solving. My focus is on improving my skills in Node.js, databases, and API development.
                     <br /><br />
                     Outside of work, I enjoy learn new things and occasionally play games, which helps me stay creative and motivated. Check out my portfolio to see what I've been working on. Let's connect and collaborate! 
                 </Paragraphme>
@@ -71,8 +71,8 @@ const About = () => {
             <Right>
                 <Subhead>My Skills.</Subhead>
                 <Itemcontainer>
-                    {DataSkills.map(item=>
-                        <Itemskills>{item}</Itemskills>
+                    {DataSkills.map((item, index)=>
+                        <Itemskills key={index}>{item}</Itemskills>
                     )}
                 </Itemcontainer>
             </Right>
