@@ -18,6 +18,9 @@ const InnerText = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
+  ${mobile({
+    padding: '0 1rem'
+  })}
 `;
 const Main = styled.div`
   font-size: 3.3rem;
