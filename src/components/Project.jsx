@@ -8,6 +8,7 @@ const Container = styled.section`
   width: 100%;
   padding: 4rem 0;
   background-color: #ffffff;
+  overflow: hidden;
 `;
 const MainContainer = styled.div`
   display: flex;
@@ -17,9 +18,12 @@ const MainContainer = styled.div`
   max-width: 100%;
   align-items: center;
   margin-top: 4rem;
+  ${mobile({
+    marginTop: '2rem'
+  })}
 `;
 const Main = styled.div`
-width: 100%;
+  width: 100%;
   display: flex;
   gap: 5rem;
   justify-content: center;
@@ -28,8 +32,7 @@ width: 100%;
   ${mobile({
     flexDirection: "column",
     gap: "1rem",
-    padding: "0 2rem",
-    alignItems: "start",
+    alignItems: "start"
   })}
 `;
 const Decoration = styled.div`
@@ -47,14 +50,16 @@ const Decoration = styled.div`
 const Left = styled.div`
   text-align: right;
   font-weight: 600;
+  padding: 0 1rem;
 `;
 const Right = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 0 1rem;
   ${mobile({
-    width: "100%",
+    width: "calc(100% - 2rem)",
   })}
 `;
 const Head = styled.div`

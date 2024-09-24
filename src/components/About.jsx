@@ -34,6 +34,7 @@ const Bodytext = styled.div`
   gap: 5rem;
   ${mobile({
     flexDirection: "column",
+    padding: '0 1rem 3rem'
   })}
 `;
 const Left = styled.div`
