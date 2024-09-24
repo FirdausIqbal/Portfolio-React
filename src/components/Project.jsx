@@ -19,6 +19,7 @@ const MainContainer = styled.div`
   margin-top: 4rem;
 `;
 const Main = styled.div`
+width: 100%;
   display: flex;
   gap: 5rem;
   justify-content: center;
@@ -85,17 +86,29 @@ const Project = () => {
               <h1>{item.title}</h1>
               <p>{item.desc}</p>
               {item.links.map((link, index) => {
-                const display = []
-                if(link.frontend){
-                  display.push(<StyledLink key={`${index}-frontend`} to={link.frontend}>Frontend Link</StyledLink>)
+                const display = [];
+                if (link.frontend) {
+                  display.push(
+                    <StyledLink key={`${index}-frontend`} to={link.frontend}>
+                      Frontend Link
+                    </StyledLink>
+                  );
                 }
-                if(link.backend){
-                  display.push(<StyledLink key={`${index}-backend`} to={link.backend}>Code Link</StyledLink>)
+                if (link.backend) {
+                  display.push(
+                    <StyledLink key={`${index}-backend`} to={link.backend}>
+                      Code Link
+                    </StyledLink>
+                  );
                 }
-                if(link.preview){
-                  display.push(<StyledLink key={`${index}-preview`} to={link.preview}>Preview Link</StyledLink>)
+                if (link.preview) {
+                  display.push(
+                    <StyledLink key={`${index}-preview`} to={link.preview}>
+                      Preview Link
+                    </StyledLink>
+                  );
                 }
-                return display.length > 0 ? display : null
+                return display.length > 0 ? display : null;
               })}
             </Right>
           </Main>
