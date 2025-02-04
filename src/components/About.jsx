@@ -92,6 +92,7 @@ const DataSkills = [
   "Github",
   "Linux Terminal",
   "React",
+  "Java"
 ];
 const About = () => {
   return (
