@@ -50,5 +50,16 @@ export const projectData = [
             }
         ],
         year: 2024
+    },
+    {
+        id: 5,
+        title: 'Black Jack Game - With Java Swing',
+        desc: 'A simple black jack card game with a player versus dealer setup.',
+        links: [
+            {
+                backend: 'https://github.com/FirdausIqbal/BlackJack-Swing',
+            }
+        ],
+        year: 2025
     }
 ]
